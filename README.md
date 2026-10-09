@@ -2,6 +2,18 @@
 
 这是一个不需要 Node.js、npm 或 React 的 Jekyll 静态博客模板。
 
+## 学生开箱步骤
+
+1. 打开模板仓库，点击 **Use this template → Create a new repository**。
+2. 填写自己决定的仓库名称和公开/私有可见性。
+3. 创建完成后，进入自己仓库的 **Settings → Pages**，把 Source 设为 **GitHub Actions**。
+4. 等待 `Build and deploy Jekyll site` workflow 完成，再打开 Pages URL。
+5. 修改 `_config.yml` 中的名字，编辑 `index.html` 的项目卡片，并在 `_posts/` 中写自己的 Markdown 文章。
+
+仓库创建和 Pages 设置也可以让 Agent 操作，但必须先把目标仓库 URL 明确告诉 Agent，并在推送前检查 `git diff`。
+
+注意：仓库里的 `index.html` 是 Jekyll 模板源码，不能靠双击本地文件看到最终页面；最终 HTML 会由 GitHub Actions 生成。学生不需要在电脑上安装 Ruby、Jekyll、Node.js 或 npm。
+
 ## 写一篇新文章
 
 在 `_posts/` 中复制示例文章，文件名使用：
